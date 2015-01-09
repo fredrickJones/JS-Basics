@@ -57,16 +57,16 @@ welcome();
 //returned from adder.
 
   //Code Here
-var adder = function(arguments, 4) {
-  for (var i = 0; i < adder.length; i++) {
-    var addNmbrs = [i];
+var adder = function() {
+  var total = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    total += arguments[i];
   };
-  return 
-  num = 
-  alert('The Total Number was ' + num);
+  return total;
 };
 
-adder(1, 4, 45, 5, 74);
+var sum = adder(1, 4, 5, 7);
+alert('The Total Number was ' + sum);
 
 
 
