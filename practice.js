@@ -57,11 +57,16 @@ welcome();
 //returned from adder.
 
   //Code Here
-var adder = function() {
-  for (var i = 0; i < addNmbrs.length; i++) {
-    addNmbrs[i];
+var adder = function(arguments, 4) {
+  for (var i = 0; i < adder.length; i++) {
+    var addNmbrs = [i];
   };
+  return 
+  num = 
+  alert('The Total Number was ' + num);
 };
+
+adder(1, 4, 45, 5, 74);
 
 
 
@@ -95,25 +100,35 @@ NaN
 //Create a function called myName that returns your name
 
   //Code Here
+var myName = function() {
+  return "Fredrick";
+};
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+var newMyName = myName;
 
 //Now alert the result of invoking newMyName
+
+alert(newMyName());
 
 
 
 //Next problem
 
-
-
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+var outerFn = function() {
+  return function() {
+      return 'Fredrick';
+  };
+};
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
+var innerFn = outerFn();
 
 //Now invoke innerFn.
+innerFn();
